@@ -31,7 +31,7 @@ vm_memory  : 2048
 
 # Number of CPUs to allow VirtualBox to use (2 or more help the VirtualBox VM stay responsive during
 # active development)
-vb_cpus : 1
+vb_cpus : 2
 
 # Local IP address which will refer to this VM
 # (Changes to this setting require a 'vagrant reload' to take effect)
@@ -86,7 +86,7 @@ vm_gui_mode     : false
 #dspace::git_branch : 'master'
 
 # since the DSpace master branch currently has no UI in it, we will set the git_branch to dspace-6_x
-dspace::git_branch : 'dspace-6_x'
+dspace::git_branch : 'dspace-5_x'
 
 #-------------------------------
 # DSpace Administrative Account
@@ -131,7 +131,7 @@ dspace::admin_language    : 'en'
 # IF you want to exclude particular webapps from building & installing, you can do so like:
 # mvn_params: '-P-dspace-jspui,-dspace-xmlui,-dspace-rdf,'
 # (This setting is only used during a 'vagrant up')
-dspace::mvn_params     : '-P-dspace-rdf'
+dspace::mvn_params     : '-Denv=custom'
 
 # Ant Defaults
 #
