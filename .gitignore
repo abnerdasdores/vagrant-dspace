@@ -23,5 +23,3 @@
 .idea
 # NetBeans
 nbactions.xml
-
-!config/local.yaml
